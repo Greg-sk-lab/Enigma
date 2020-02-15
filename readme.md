@@ -52,7 +52,7 @@ What we'll do during this project
     - add in Option menu new feature :  
             own settings  
             own path to store coded phrases  
-            prefered cipher  
+            prefered ciphers  
             default email  
             etc
 - save own setting in formats:
