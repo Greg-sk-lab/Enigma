@@ -6,7 +6,7 @@ public class Root13Cipher implements Cipher {
     private final int ROOT_DISPLACEMENT = 13;
 
     @Override
-    public String encode(String textToEncode) {
+    public String encode (String textToEncode) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < textToEncode.length(); i++) {
             char sign = textToEncode.charAt(i);
@@ -22,15 +22,13 @@ public class Root13Cipher implements Cipher {
                 }
             } else {
                 stringBuilder.append(sign);
-
             }
-
         }
         return stringBuilder.toString();
     }
 
     @Override
-    public String decode(String textToDecode) {
+    public String decode (String textToDecode) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < textToDecode.length(); i++) {
             char sign = textToDecode.charAt(i);
@@ -51,10 +49,9 @@ public class Root13Cipher implements Cipher {
         }
         return stringBuilder.toString();
     }
-    private boolean isIncluded (char sign){
-        return ALPHABET.contains(Character.toString(sign));
+
+    private boolean isIncluded (char sign) {
+        return ALPHABET.contains(Character.toString(sign).toLowerCase());
 
     }
-
-
 }
