@@ -15,6 +15,7 @@ public class Main extends Application {
     */
 
     String resoursePath = "/FXML/Main.fxml";
+    private static Stage mainStage;
 
     public void start(Stage primaryStage) throws Exception { //stage to coś co przechowuje nasze sceny, wycinek ekranu monitora
 
@@ -25,6 +26,9 @@ public class Main extends Application {
         primaryStage.setTitle("Enigma");
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+    public static Stage getMainStage(){
+        return mainStage;
     }
 }
 

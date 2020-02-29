@@ -10,6 +10,8 @@
    <children>
       <Button alignment="CENTER" layoutX="439.0" layoutY="82.0" mnemonicParsing="false" onAction="#triggerEncoding" prefHeight="37.0" prefWidth="91.0" text="ENCODE" />
       <Button defaultButton="true" layoutX="439.0" layoutY="133.0" mnemonicParsing="false" onAction="#triggerDecoding" prefHeight="37.0" prefWidth="91.0" text="DECODE" />
-      <TextArea fx:id="textArea" layoutX="60.0" layoutY="200.0" prefHeight="158.0" prefWidth="480.0" promptText="Promp text to encode" />
+      <TextArea fx:id="inputTextArea" layoutX="60.0" layoutY="200.0" prefHeight="158.0" prefWidth="480.0" promptText="Promp text to encode" text="Ala ma kota" />
+      <Button layoutX="60.0" layoutY="80.0" mnemonicParsing="false" onAction="#saveToFile" prefHeight="44.0" prefWidth="84.0" text="Save" />
+      <Button layoutX="60.0" layoutY="139.0" mnemonicParsing="false" onAction="#loadFile" prefHeight="44.0" prefWidth="84.0" text="Load" />
    </children>
 </AnchorPane>
